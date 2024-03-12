@@ -1,0 +1,116 @@
+:root {
+    --hamburger-blue: rgb(045,051,128);
+    --main-title: rgb(046,064,152);
+}
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0;
+}
+header > .header{
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-area > img{
+    width: 132.5px;
+    margin-top: 6px;
+}
+.logo-area > p{
+    font-size: 10px;
+    margin: 0;
+    position:relative;
+    top: -24px;
+    font-family: "Assistant", sans-serif;
+    color: #7e685a;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.hamburger > div{
+    width: 40px;
+    height: 5px;
+    background-color: var(--hamburger-blue);
+    border-radius: 3px;
+    margin: 7px 10px;
+}
+.main-title{
+    background-color: var(--main-title);
+    color: white;
+    width: 100vw;
+    height: 130px;
+    font-family: "Assistant", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-title > p{
+    margin: 0;
+}
+.main-title > p:first-child{
+    font-size: 10vw;
+}
+.main-title > p:last-child{
+    font-size: 15vw;
+    font-weight: 800px;
+}
+.hidden{
+    visibility: hidden;
+}
+.rotate-down{
+    animation: rotate-down 250ms linear 1;
+}
+.rotate-up{
+    animation: rotate-up 250ms linear 1;
+}
+.reverse-rotate-down{
+    animation: reverse-rotate-down 250ms linear 1;
+}
+.reverse-rotate-up{
+    animation: reverse-rotate-up 250ms linear 1;
+}
+.hamburger > .stay-rotate-down{
+    transform-origin: top left;
+
+    transform: rotateZ(45deg);
+}
+.hamburger > .stay-rotate-up{
+    margin: 10px 10px;
+    transform-origin: bottom left;
+    transform: rotateZ(-45deg);
+}
+@keyframes rotate-down {
+    100%{
+        transform-origin: top left;
+        transform: rotateZ(45deg);
+    }
+}
+@keyframes rotate-up {
+    100%{
+        transform-origin: bottom left;
+        transform: rotateZ(-45deg);
+    }
+}
+@keyframes reverse-rotate-down {
+    0%{
+        transform-origin: top left;
+        transform: rotateZ(45deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+@keyframes reverse-rotate-up {
+    0%{
+        transform-origin: bottom left;
+        transform: rotateZ(-45deg);
+    }
+    100%{
+
+        transform: rotateZ(0deg);
+    }
+}
