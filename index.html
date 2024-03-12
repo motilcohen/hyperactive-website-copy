@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,19 +18,45 @@
                 <div id="ham-middle"></div>
                 <div id="ham-bottom"></div>
             </div>
+            
             <div class="logo-area">
                 <img src="	https://hyperactive.co.il/static/media/hyperactive_logo.ca677e3d.png" alt="hyperactive logo">
                 <p>בית הספר להיי-טק הטוב בישראל</p>
             </div>
             
         </div>
-        <section>
-            <div class="main-title">
-                <p>?לא עבדת</p>
-                <p>!לא שילמת</p>
-            </div>
-        </section>
+        <nav id="dropbox-header-nav" class="dropbox-header-nav display-none">
+            <a>בית</a>
+            <a onclick="headerSubNavDropbox()"><img id="down-triangle" src="sort-down.png" alt="sort-down-triangle">קריירות
+                
+            </a>
+            
+            <nav id="header-sub-nav-dropbox" class="header-sub-nav-dropbox display-none">
+                <a>סייבר ואבטחת מידע |  ethical hacking</a>
+                <a>ניהול  רשתות ומחשוב | system administration</a>
+                <a> שיווק דיגיטלי | seo/social/sales&marketing</a>
+                <a>בדיקת תוכנה | qa & automation</a>
+                <a>עיצוב גרפי | ui/ux</a>
+                <a>פיתוח תוכנה | full stack  </a>
+                <a>פיתוח מערכות משובצות מחשב  | embedded</a>
+                <a>פיתוח אפליקציות מובייל  | ios/android</a>
+            </nav>
+            <a>?למה ללמוד אצלנו</a>
+            <a>כאן תמצאו את הבוגרים שלנו</a>
+            <a>קצת עלינו</a>
+            <a>איך זה עובד</a>
+            <a>שאלות שכנראה תשאלו</a>
+            <a>שירות לציבור</a>
+            
+
+        </nav>
     </header>
+    <section>
+        <div class="main-title">
+            <p>?לא עבדת</p>
+            <p>!לא שילמת</p>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body> 
 </html>

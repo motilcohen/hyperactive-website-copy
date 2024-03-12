@@ -1,12 +1,23 @@
 const globalVariables = {
-    hamburgerClicked: true
+    hamburgerClicked: true,
+    headerSubNavDropboxClicked: false
 }
 
 
-
+function headerSubNavDropbox(){
+    if(!globalVariables.headerSubNavDropboxClicked){
+        globalVariables.headerSubNavDropboxClicked = true;
+        document.getElementById("header-sub-nav-dropbox").classList.remove("display-none");
+        
+    }else{
+        globalVariables.headerSubNavDropboxClicked = false;
+        document.getElementById("header-sub-nav-dropbox").classList.add("display-none");
+    }
+}
 function hamburgerClick(){
     if (globalVariables.hamburgerClicked) {
         globalVariables.hamburgerClicked = false;
+        document.getElementById("dropbox-header-nav").classList.remove("display-none");
         document.getElementById("ham-middle").classList.add("hidden");
         document.getElementById("ham-top").classList.add("rotate-down");
         document.getElementById("ham-bottom").classList.add("rotate-up");
@@ -18,7 +29,7 @@ function hamburgerClick(){
         },230)
     }else{
         globalVariables.hamburgerClicked = true;
-        
+        document.getElementById("dropbox-header-nav").classList.add("display-none");
         document.getElementById("ham-top").classList.remove("stay-rotate-down");
             document.getElementById("ham-bottom").classList.remove("stay-rotate-up");
             document.getElementById("ham-top").classList.add("reverse-rotate-down");
