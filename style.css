@@ -131,6 +131,14 @@ header > .header{
 .desktop-header-nav{
     display: none;
 }
+.sub-main-title{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000;
+    background-color: rgb(239,248,223);
+    max-width: 1110px;
+    margin: 0 auto;
+}
 @media screen and (min-width: 925px) and (max-width: 1094px) {
     .desktop-header-nav > a{
         font-size: 1.4vw;
