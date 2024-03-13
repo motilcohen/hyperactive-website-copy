@@ -1,7 +1,18 @@
 const globalVariables = {
     hamburgerClicked: true,
-    headerSubNavDropboxClicked: false
+    headerSubNavDropboxClicked: false,
 }
+document.getElementById("desktop-header-sub-nav-link").addEventListener('mouseover', function() {
+    document.getElementById("desktop-header-sub-nav").classList.remove("display-none");
+    globalVariables.desktopHeaderSubNavLinkHover = true;
+});
+document.getElementById("desktop-header-sub-nav").addEventListener('mouseover', function() {
+    globalVariables.desktopHeaderSubNavHover = true;
+});
+document.getElementById("desktop-header-sub-nav-link").addEventListener('mouseleave', function() {
+
+        document.getElementById("desktop-header-sub-nav").classList.add("display-none");
+});
 
 
 function headerSubNavDropbox(){
