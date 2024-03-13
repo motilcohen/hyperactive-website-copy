@@ -8,10 +8,11 @@ function headerSubNavDropbox(){
     if(!globalVariables.headerSubNavDropboxClicked){
         globalVariables.headerSubNavDropboxClicked = true;
         document.getElementById("header-sub-nav-dropbox").classList.remove("display-none");
-        
+        document.getElementById("header-sub-nav-dropbox-link").classList.add("header-sub-nav-dropbox-link");
     }else{
         globalVariables.headerSubNavDropboxClicked = false;
         document.getElementById("header-sub-nav-dropbox").classList.add("display-none");
+        document.getElementById("header-sub-nav-dropbox-link").classList.remove("header-sub-nav-dropbox-link");
     }
 }
 function hamburgerClick(){

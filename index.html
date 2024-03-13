@@ -11,52 +11,81 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="hamburger" onclick="hamburgerClick()">
-                <div id="ham-top"></div>
-                <div id="ham-middle"></div>
-                <div id="ham-bottom"></div>
-            </div>
-            
-            <div class="logo-area">
-                <img src="	https://hyperactive.co.il/static/media/hyperactive_logo.ca677e3d.png" alt="hyperactive logo">
-                <p>בית הספר להיי-טק הטוב בישראל</p>
-            </div>
-            
-        </div>
-        <nav id="dropbox-header-nav" class="dropbox-header-nav display-none">
-            <a>בית</a>
-            <a onclick="headerSubNavDropbox()"><img id="down-triangle" src="sort-down.png" alt="sort-down-triangle">קריירות
+    <div id="content-container">
+        <header>
+            <div class="header">
+                <div class="hamburger" onclick="hamburgerClick()">
+                    <div id="ham-top"></div>
+                    <div id="ham-middle"></div>
+                    <div id="ham-bottom"></div>
+                </div>
+                <nav id="desktop-header-nav" class="desktop-header-nav">
+                    <a onclick="desktopHeaderSubNav()" id="desktop-header-sub-nav-link"><img id="down-triangle" src="sort-down.png" alt="sort-down-triangle">קריירות</a>
+                    <div></div>
+                    <a>?למה ללמוד אצלנו</a>
+                    <div></div>
+                    <a>כאן תמצאו את הבוגרים שלנו</a>
+                    <div></div>
+                    <a>קצת עלינו</a>
+                    <div></div>
+                    <a>איך זה עובד</a>
+                    <div></div>
+                    <a>שאלות שכנראה תשאלו</a>
+                    <div></div>
+                    <a>שירות לציבור</a>
+                    
+                    <nav id="desktop-header-sub-nav" class="desktop-header-sub-nav display-none">
+                        <a>ethical hacking | סייבר ואבטחת מידע</a>
+                        <a>system administration | ניהול  רשתות ומחשוב </a>
+                        <a>seo/social/sales&marketing | שיווק דיגיטלי</a>
+                        <a>qa & automation | בדיקת תוכנה</a>
+                        <a>ui/ux | עיצוב גרפי</a>
+                        <a>full stack | פיתוח תוכנה</a>
+                        <a>embedded | פיתוח מערכות משובצות מחשב</a>
+                        <a>ios/android | פיתוח אפליקציות מובייל</a>
+                    </nav>
+                </nav>
+                <div class="logo-area">
+                    <img src="	https://hyperactive.co.il/static/media/hyperactive_logo.ca677e3d.png" alt="hyperactive logo">
+                    <p>בית הספר להיי-טק הטוב בישראל</p>
+                </div>
                 
-            </a>
-            
-            <nav id="header-sub-nav-dropbox" class="header-sub-nav-dropbox display-none">
-                <a>סייבר ואבטחת מידע |  ethical hacking</a>
-                <a>ניהול  רשתות ומחשוב | system administration</a>
-                <a> שיווק דיגיטלי | seo/social/sales&marketing</a>
-                <a>בדיקת תוכנה | qa & automation</a>
-                <a>עיצוב גרפי | ui/ux</a>
-                <a>פיתוח תוכנה | full stack  </a>
-                <a>פיתוח מערכות משובצות מחשב  | embedded</a>
-                <a>פיתוח אפליקציות מובייל  | ios/android</a>
-            </nav>
-            <a>?למה ללמוד אצלנו</a>
-            <a>כאן תמצאו את הבוגרים שלנו</a>
-            <a>קצת עלינו</a>
-            <a>איך זה עובד</a>
-            <a>שאלות שכנראה תשאלו</a>
-            <a>שירות לציבור</a>
-            
+            </div>
+            <nav id="dropbox-header-nav" class="dropbox-header-nav display-none">
+                <a>בית</a>
+                <a onclick="headerSubNavDropbox()" id="header-sub-nav-dropbox-link"><img id="down-triangle" src="sort-down.png" alt="sort-down-triangle">קריירות</a>
+                <nav id="header-sub-nav-dropbox" class="header-sub-nav-dropbox display-none">
+                    <a>ethical hacking | סייבר ואבטחת מידע</a>
+                    <a>system administration | ניהול  רשתות ומחשוב </a>
+                    <a>seo/social/sales&marketing | שיווק דיגיטלי</a>
+                    <a>qa & automation | בדיקת תוכנה</a>
+                    <a>ui/ux | עיצוב גרפי</a>
+                    <a>full stack | פיתוח תוכנה</a>
+                    <a>embedded | פיתוח מערכות משובצות מחשב</a>
+                    <a>ios/android | פיתוח אפליקציות מובייל</a>
+                </nav>
+                
+                <a>?למה ללמוד אצלנו</a>
+                <a>כאן תמצאו את הבוגרים שלנו</a>
+                <a>קצת עלינו</a>
+                <a>איך זה עובד</a>
+                <a>שאלות שכנראה תשאלו</a>
+                <a>שירות לציבור</a>
+                
 
-        </nav>
-    </header>
-    <section>
-        <div class="main-title">
-            <p>?לא עבדת</p>
-            <p>!לא שילמת</p>
-        </div>
-    </section>
+            </nav>
+
+
+
+            
+        </header>
+        <section>
+            <div class="main-title">
+                <p>?לא עבדת</p>
+                <p>!לא שילמת</p>
+            </div>
+        </section>
+    </div>
     <script src="script.js"></script>
 </body> 
 </html>
