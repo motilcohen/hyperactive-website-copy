@@ -94,11 +94,13 @@ header > .header{
     margin: 0;
 }
 .main-title > p:first-child{
-    font-size: 10vw;
+    font-size: 50px;
+    font-weight: 600;
 }
 .main-title > p:last-child{
-    font-size: 15vw;
-    font-weight: 800px;
+    font-size: 66px;
+    font-weight: 800;
+    line-height: 0.9;
 }
 .hidden{
     visibility: hidden;
@@ -204,6 +206,17 @@ header > .header{
     }
     #desktop-header-sub-nav-link{
         position: static;
+    }
+    .main-title{
+        height: 190px;
+    }
+    .main-title > p:first-child{
+        font-size: 90px;
+        line-height: 0.9;
+    }
+    .main-title > p:last-child{
+        font-size: 120px;
+        font-weight: 800;
     }
 }
 @keyframes rotate-down {
