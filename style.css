@@ -80,7 +80,7 @@ header > .header{
 }
 .main-title{
     background-color: var(--main-title);
-    background: linear-gradient(45deg, rgb(046,055,133), rgb(054,067,157));
+    background: linear-gradient(155deg,#154b9c,#213b7f);
     color: white;
     width: 100vw;
     height: 130px;
@@ -137,7 +137,114 @@ header > .header{
     color: #000;
     background-color: rgb(239,248,223);
     max-width: 1110px;
-    margin: 0 auto;
+    margin: 0 auto ;
+    padding-top: 10px;
+}
+
+.careers-banner > h2{
+    direction: rtl;
+    text-align: center;
+    font-size: 2.9rem;
+    margin: 30px 0 26px 0;
+}
+.careers-section > div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding:  1px;
+    margin-bottom: 6px;
+    align-items: center;
+    border: 1px solid rgb(205, 205, 205);
+}
+.careers-section > div > div{
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 8px;
+}
+.careers-section > div > div > p{
+    margin: 0;
+    direction: rtl;
+}
+.break-line{
+    background-color: #000;
+    border-radius: 2px;
+    height: 30px;
+    width: 4px;
+}
+.break-line-syber{
+    background-color: #4ac694;
+}
+.break-line-system{
+    background-color: #a3b6cc;
+}
+.break-line-social{
+    background-color: #3a5998;
+}
+.break-line-qa{
+    background-color: #316cff;
+}
+.break-line-uiux{
+    background-color: #f9cf58;
+}
+.break-line-fullstack{
+    background-color: #9da6e9;
+}
+.break-line-app{
+    background-color: #8e8e93;
+}
+.break-line-embedded{
+    background-color: #475f8e;
+}
+.career-icon{
+    margin-left: 6px;
+    height: 40px;
+    width: 40px;
+}
+.arrow-left{
+    width: 10px;
+    height: 10px;
+}
+@media screen and (min-width: 451px){
+    .career-icon{
+        height: 64px;
+        width: 64px;
+    }
+    .careers-section > div > div > p{
+        direction: ltr;
+        text-align: center;
+    }
+    .break-line{
+        height: 4px;
+        width: 40px;
+        margin-top: 4px;
+    }
+    .careers-section{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: start;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+    .careers-section > div{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        padding:  1px;
+        margin-left: 16px;
+        margin-bottom: 10px;
+        align-items: center;
+        border: none;
+    }
+    .careers-section > div >div{
+        width: 130px;
+        flex-direction: column;
+    }
+    .arrow-left{
+        display: none;
+    }
 }
 @media screen and (min-width: 925px) and (max-width: 1094px) {
     .desktop-header-nav > a{
