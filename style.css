@@ -336,6 +336,19 @@ header > .header{
         font-size: 120px;
         font-weight: 800;
     }
+    .main-banner{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        justify-content: space-between;
+        width: 100vw;
+        max-width: 1110px;
+        height: 590px;
+    }
+    .careers-banner
+    ,.careers-section{
+        max-width: 650px;;
+    }
     #contact-form{
         align-items: center;
         display: flex;
@@ -344,6 +357,7 @@ header > .header{
         height: 508px;
         background: linear-gradient(155deg,#154b9c,#213b7f);
         color: #fff;
+        align-self: end;
     }
     .field{
         width: 250px;
