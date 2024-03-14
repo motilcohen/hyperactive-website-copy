@@ -259,8 +259,12 @@ header > .header{
     padding: 14px 15px 14px 18px;
 }
 .white-card{
+    background-color: rgb(236,245,216);
+}
+.white-card{
     font-size: 1.1rem;
     padding: 14px 15px 14px 20px;
+    margin-bottom: 60px;
 }
 .black-card a{
     color: white;
@@ -322,13 +326,19 @@ li >p{
 }
 @media screen and (min-width: 925px){
     header{
-        max-width: 1200px;
+        
         margin: 0 auto;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        width: 100vw;
     }
     header > .header{
         justify-content:center;
         height: 73px;
         left: 50px;
+        
     }
     .logo-area > img{
         width: 165.5px;
@@ -485,6 +495,26 @@ li >p{
         align-items: center;
         justify-content: center;
         margin-top: 10px;;
+    }
+    .explain-section{
+        box-shadow: 10px 50px 100px #000;
+        display: flex;
+        justify-content: space-around;
+    }
+    .explain-section-content-area{
+        max-width: 1110px;
+    }
+    .explain-cards{
+        display: flex;
+        gap: 20px;
+    }
+    .card{
+        position: relative;
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .explain-section-content-area > h2{
+        margin-top: 40px;
     }
 }
 @keyframes rotate-down {
