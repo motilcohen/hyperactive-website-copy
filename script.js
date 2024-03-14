@@ -14,7 +14,6 @@ document.getElementById("desktop-header-sub-nav-link").addEventListener('mousele
         document.getElementById("desktop-header-sub-nav").classList.add("display-none");
 });
 
-
 function headerSubNavDropbox(){
     if(!globalVariables.headerSubNavDropboxClicked){
         globalVariables.headerSubNavDropboxClicked = true;
