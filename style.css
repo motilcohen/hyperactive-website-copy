@@ -512,6 +512,11 @@ li >p{
         position: relative;
         width: 50%;
         margin-bottom: 20px;
+        transition: transform 0.5s, box-shadow 0.5s linear;
+    }
+    .card:hover{
+        transform: scale(1.1);
+        box-shadow: 10px 10px 50px #000;
     }
     .explain-section-content-area > h2{
         margin-top: 40px;
