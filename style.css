@@ -276,6 +276,33 @@ ol{
 li >p{
     margin: 0;
 }
+.our-working-students-companies{
+    background-color: #fff;
+    position: static;
+    z-index: 1;
+    padding: 50px 15px 60px 0;
+}
+.our-working-students-companies h3{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.compameis-logos{
+    display: flex;
+    direction: rtl;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.compameis-logos > img{
+    margin: 22px;
+    max-width: 100px;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: fill;
+    align-self: center;
+}
 @media screen and (min-width: 451px){
     .career-icon{
         height: 64px;
@@ -501,6 +528,8 @@ li >p{
         box-shadow: 10px 50px 100px #000;
         display: flex;
         justify-content: space-around;
+        z-index: 0;
+        position: static;
     }
     .explain-section-content-area{
         max-width: 1110px;
