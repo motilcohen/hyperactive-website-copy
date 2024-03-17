@@ -303,10 +303,13 @@ li >p{
     object-fit: fill;
     align-self: center;
 }
-.about-us{
+#about-us-section{
     background-color: rgb(228,236,240);
+}
+.about-us{
     padding: 50px 15px 60px 0;
-    
+    max-width: 1100px;
+    margin:0 auto;
 }
 .about-us > div:first-child{
     display: flex;
@@ -647,7 +650,96 @@ li >p{
         margin-top: 40px;
     }
 }
-
+@media screen and (min-width: 1205px){
+    .how-its-work-section .step-content{
+        display: block;
+        height: 460px;
+        max-height: 1000px;
+    }
+    .step-header,
+    .step-content{
+        padding: 0;
+    }
+    .step-header{
+        direction: ltr;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .step-header >p {
+        text-align: end;
+        margin-top: 0;
+    }
+    #step01,
+    #step02,
+    #step03,
+    #step04{
+        margin: 0;
+        padding: 45px;
+        position: relative;
+    }
+    #step01{
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    #step04{
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    #step03{
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    #step02{
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .how-its-work-steps{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .step-header-button{
+        display: none;
+    }
+    .about-us{
+        padding-right: 0;
+    }
+    .triangle01 {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 25px solid #0598a8; 
+        position: absolute;
+        top: 30px;
+        left: -25px;
+        z-index: 100;
+    }
+    .triangle02 {
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 25px solid #39a4dc; 
+        position: absolute;
+        bottom: -25px;
+        left: 45px;
+        z-index: 100;
+    }
+    .triangle03 {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 25px solid #06f; 
+        position: absolute;
+        top: 30px;
+        right: -25px;
+        z-index: 100;
+    }
+}
 @keyframes rotate-down {
     100%{
         transform-origin: top left;
