@@ -383,6 +383,7 @@ li >p{
         opacity: 0.98;
         font-weight: 700;
         justify-content: space-evenly;
+        z-index: 100;
     }
     .desktop-header-sub-nav  a{
         margin-right: 16px;
@@ -455,7 +456,7 @@ li >p{
         font-size: 1.5em;
         width: 250px;
         height: 60px;
-        position: relative;
+        position: static;
         top:-20px;
     }
     .form-title > h3{
@@ -509,7 +510,7 @@ li >p{
         gap: 20px;
     }
     .card{
-        position: relative;
+        position: static;
         width: 50%;
         margin-bottom: 20px;
         transition: transform 0.5s, box-shadow 0.5s linear;
