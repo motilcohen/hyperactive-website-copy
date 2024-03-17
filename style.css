@@ -280,7 +280,7 @@ li >p{
     background-color: #fff;
     position: static;
     z-index: 1;
-    padding: 50px 15px 60px 0;
+    padding: 50px 15px 40px 0;
 }
 .our-working-students-companies h3{
     font-size: 1.5em;
@@ -302,6 +302,101 @@ li >p{
     flex-shrink: 0;
     object-fit: fill;
     align-self: center;
+}
+.about-us{
+    background-color: rgb(228,236,240);
+    padding: 50px 15px 60px 0;
+    
+}
+.about-us > div:first-child{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    font-size: 1.1rem;
+}
+.about-us > div:first-child > h4{
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+}
+.about-us > div:first-child > p{
+    margin: 10px 0;
+}
+.how-its-work-section > h2{
+    font-size: 2.9rem;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+.how-its-work-steps{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+    direction: rtl;
+}
+.how-its-work-steps > div{
+    margin: 5px 0;
+}
+#step01{
+    background-color: #0598a8;
+}
+#step02{
+    background-color: #39a4dc;
+}
+#step03{
+    background-color: #06f;
+}
+#step04{
+    background-color: #213b7f;
+}
+.step-header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    height: 67px;
+    padding: 20px;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.step-header-button{
+    height: 15px;
+    width: 15px;
+    position: relative;
+    transition: transform 0.7s linear;
+}
+.step-header-button > div:first-child{
+    background: #000;
+    height: 15.5px;
+    width: 1.8px;
+    position: absolute;
+    left: 6.5px;
+}
+.step-header-button > div:last-child{
+    background: #000;
+    height: 1.8px;
+    width: 15.5px;
+    position: absolute;
+    top: 6.5px;
+}
+.rotate-right-45deg{
+    transform: rotateZ(45deg);
+}
+.rotate-left-45deg{
+    transform: rotateZ(0deg);
+}
+.step-content{
+    transition: max-height 0.3s linear;
+    max-height: 900px;
+    padding: 0 20px 20px 20px;
+    font-size: 1.1rem;
+}
+.step-content >p:first-child{
+    margin-top: 0;
+}
+.max-height-0{
+    max-height: 0;
 }
 @media screen and (min-width: 451px){
     .career-icon{
@@ -353,7 +448,7 @@ li >p{
 }
 @media screen and (min-width: 925px){
     header{
-        
+        z-index: 200;
         margin: 0 auto;
         position: -webkit-sticky;
         position: sticky;
@@ -552,6 +647,7 @@ li >p{
         margin-top: 40px;
     }
 }
+
 @keyframes rotate-down {
     100%{
         transform-origin: top left;
