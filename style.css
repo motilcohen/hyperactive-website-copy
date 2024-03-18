@@ -630,6 +630,77 @@ li >p{
 .sticky-whatsapp-btn-desktop{
     display: none;
 }
+.modal-section{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .31);
+    z-index: 300;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.modal{
+    width: 610px;
+    height: 610px;
+    border-radius: 305px;
+    background-image: url(/images/modal-bg.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.close-modal-btn{
+    margin-top: 20px;
+}
+.close-modal-btn > div:first-child{
+    transform: rotateZ(45deg);
+}
+.close-modal-btn > div:last-child{
+    transform: rotateZ(-45deg);
+}
+.close-modal-btn > div{
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+}
+.modal >h2{
+    display: block;
+    direction: rtl;
+    color: #154b9c;
+    text-align: center;
+    width: 75%;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 46px 0 0 0;
+}
+.modal > input{
+    color: #040ea3;
+    font-weight: 800;
+    width: 400px;
+    height: 7vh;
+    margin: 15px 0;
+    padding-right: 5px;
+    border: none;
+    box-shadow: 0 0 4px -1px #213b7f;
+    direction: rtl;
+}
+.modal label{
+    color:#040ea3;
+    font-size: 13px;
+    font-weight: 700;
+}
+.modal >button{
+    background: #154b9c;
+    width: 210px;
+    border: none;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 5px;
+    height: 50px;
+}
 @media screen and (min-width: 451px){
     .career-icon{
         height: 64px;

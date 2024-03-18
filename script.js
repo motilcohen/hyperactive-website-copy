@@ -23,9 +23,13 @@ const globalVariables = {
     question16clicked: false,
     question17clicked: false,
     question18clicked: false,
-    question19clicked: false
+    question19clicked: false,
+    modalActive: false
 }
-
+function closeModal(){
+    globalVariables.modalActive = false;
+    document.getElementById("modal-section").style.display = "none";
+}
 function question01(){
     if(!globalVariables.question01clicked){
         document.getElementById("arrow-down-01").classList.add("arrow-up");
