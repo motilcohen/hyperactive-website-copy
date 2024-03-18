@@ -5,7 +5,245 @@ const globalVariables = {
     howItsWorkStep02Clicked: false,
     howItsWorkStep03Clicked: false,
     howItsWorkStep04Clicked: false,
+    question01clicked: false,
+    question02clicked: false,
+    question03clicked: false,
+    question04clicked: false,
+    question05clicked: false,
+    question06clicked: false,
+    question07clicked: false,
+    question08clicked: false,
+    question09clicked: false,
+    question10clicked: false,
+    question11clicked: false,
+    question12clicked: false,
+    question13clicked: false,
 }
+
+function question01(){
+    if(!globalVariables.question01clicked){
+        document.getElementById("arrow-down-01").classList.add("arrow-up");
+        globalVariables.question01clicked = true;
+        document.getElementById("q1-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q1-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-01").classList.remove("arrow-up");
+        globalVariables.question01clicked = false;
+        document.getElementById("q1-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q1-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question02(){
+    if(!globalVariables.question02clicked){
+        document.getElementById("arrow-down-02").classList.add("arrow-up");
+        globalVariables.question02clicked = true;
+        document.getElementById("q2-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q2-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-02").classList.remove("arrow-up");
+        globalVariables.question02clicked = false;
+        document.getElementById("q2-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q2-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question03(){
+    if(!globalVariables.question03clicked){
+        document.getElementById("arrow-down-03").classList.add("arrow-up");
+        globalVariables.question03clicked = true;
+        document.getElementById("q3-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q3-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-03").classList.remove("arrow-up");
+        globalVariables.question03clicked = false;
+        document.getElementById("q3-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q3-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question04(){
+    if(!globalVariables.question04clicked){
+        document.getElementById("arrow-down-04").classList.add("arrow-up");
+        globalVariables.question04clicked = true;
+        document.getElementById("q4-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q4-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-04").classList.remove("arrow-up");
+        globalVariables.question04clicked = false;
+        document.getElementById("q4-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q4-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question05(){
+    if(!globalVariables.question05clicked){
+        document.getElementById("arrow-down-05").classList.add("arrow-up");
+        globalVariables.question05clicked = true;
+        document.getElementById("q5-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q5-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-05").classList.remove("arrow-up");
+        globalVariables.question05clicked = false;
+        document.getElementById("q5-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q5-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question06(){
+    if(!globalVariables.question06clicked){
+        document.getElementById("arrow-down-06").classList.add("arrow-up");
+        globalVariables.question06clicked = true;
+        document.getElementById("q6-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q6-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-06").classList.remove("arrow-up");
+        globalVariables.question06clicked = false;
+        document.getElementById("q6-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q6-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question07(){
+    if(!globalVariables.question07clicked){
+        document.getElementById("arrow-down-07").classList.add("arrow-up");
+        globalVariables.question07clicked = true;
+        document.getElementById("q7-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q7-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-07").classList.remove("arrow-up");
+        globalVariables.question07clicked = false;
+        document.getElementById("q7-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q7-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question08(){
+    if(!globalVariables.question08clicked){
+        document.getElementById("arrow-down-08").classList.add("arrow-up");
+        globalVariables.question08clicked = true;
+        document.getElementById("q8-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q8-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-08").classList.remove("arrow-up");
+        globalVariables.question08clicked = false;
+        document.getElementById("q8-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q8-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question09(){
+    if(!globalVariables.question09clicked){
+        document.getElementById("arrow-down-09").classList.add("arrow-up");
+        globalVariables.question09clicked = true;
+        document.getElementById("q9-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q9-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-09").classList.remove("arrow-up");
+        globalVariables.question09clicked = false;
+        document.getElementById("q9-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q9-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question10(){
+    if(!globalVariables.question10clicked){
+        document.getElementById("arrow-down-10").classList.add("arrow-up");
+        globalVariables.question10clicked = true;
+        document.getElementById("q10-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q10-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-10").classList.remove("arrow-up");
+        globalVariables.question10clicked = false;
+        document.getElementById("q10-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q10-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question11(){
+    if(!globalVariables.question11clicked){
+        document.getElementById("arrow-down-11").classList.add("arrow-up");
+        globalVariables.question11clicked = true;
+        document.getElementById("q11-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q11-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-11").classList.remove("arrow-up");
+        globalVariables.question11clicked = false;
+        document.getElementById("q11-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q11-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question12(){
+    if(!globalVariables.question12clicked){
+        document.getElementById("arrow-down-12").classList.add("arrow-up");
+        globalVariables.question12clicked = true;
+        document.getElementById("q12-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q12-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-12").classList.remove("arrow-up");
+        globalVariables.question12clicked = false;
+        document.getElementById("q12-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q12-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+function question13(){
+    if(!globalVariables.question13clicked){
+        document.getElementById("arrow-down-13").classList.add("arrow-up");
+        globalVariables.question13clicked = true;
+        document.getElementById("q13-answer").classList.remove("display-none");
+        setTimeout(() => {
+            document.getElementById("q13-answer").classList.remove("max-height-0");
+        }, 20);
+    }else{
+        document.getElementById("arrow-down-13").classList.remove("arrow-up");
+        globalVariables.question13clicked = false;
+        document.getElementById("q13-answer").classList.add("max-height-0");
+        setTimeout(() => {
+            document.getElementById("q13-answer").classList.add("display-none");
+        }, 300); 
+    }
+}
+
+
+
 document.getElementById("desktop-header-sub-nav-link").addEventListener('mouseover', function() {
     document.getElementById("desktop-header-sub-nav").classList.remove("display-none");
     globalVariables.desktopHeaderSubNavLinkHover = true;
