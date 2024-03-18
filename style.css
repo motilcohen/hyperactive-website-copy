@@ -458,6 +458,135 @@ li >p{
 .max-height-0{
     max-height: 0;
 }
+#contact-form,
+#footer-contact-form{
+    align-items: center;
+    flex-direction: column;
+    width: 336px;
+    height: 508px;
+    background: linear-gradient(155deg,#154b9c,#213b7f);
+    color: #fff;
+    align-self: end;
+}
+#footer-contact-form{
+    display: flex;
+    width: 100vw;
+    height: auto;
+    padding-bottom: 100px;
+}
+.field{
+    width: 250px;
+    height: 60px;
+    margin: 12px;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+}
+.field >p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: 62px;
+    margin-left: 10px;
+    margin-right: 2px;
+    text-align: end;
+}
+.form-title{
+    font-size: 1.5em;
+    width: 250px;
+    height: 60px;
+    position: static;
+    top:-20px;
+}
+#footer-contact-form > .form-title{
+    display: flex;
+    font-size: 1.2em;
+    direction: rtl;
+    width: 100vw;
+    height:auto;
+    padding: 10px;
+    margin: 0 10px 15px;
+    font-weight: 700;
+    justify-items: center;
+}
+.form-title>span{
+    margin: 0 auto;
+}
+.form-title > h3{
+    text-align: right;
+}
+.contact-form-input{
+    border: none;
+    border-right: 2px solid rgb(045,052,128) ;
+    height: 21px;
+    direction: rtl;
+}
+.contact-form-input:focus{
+    outline: none;
+}
+.checkbox-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    margin: 10px;
+    font-weight: 700;
+    font-size: 13px;
+    direction: rtl;
+    gap: 4px;
+}
+#footer-contact-form a,
+#contact-form > a{
+    color: #fff;
+    font-size: 12px;
+    margin: 4px;
+}
+#footer-contact-form button,
+#contact-form > button{
+    font-size: 2.3em;
+    font-weight: 500;
+    width: 250px;
+    height: 60px;
+    border: 2px solid #00b8d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;;
+}
+.field-container{
+    width: 70%;
+    margin: 0 auto;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-container > .field{
+    width: 100%;
+    margin: 25px 0;
+}
+#footer-contact-form .checkbox-container{
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   font-weight: 400;
+   width: auto;
+}
+#footer-contact-form a{
+    position: relative;
+    display: block;
+    margin: 0 auto 10px;
+    text-align: center;
+    font-weight: 600px;
+}
+.input-container > .field > p{
+    width: 25%;
+}
+.input-container > .field > input{
+    width: 70%;
+}
 @media screen and (min-width: 451px){
     .career-icon{
         height: 64px;
@@ -606,79 +735,9 @@ li >p{
         max-width: 650px;;
     }
     #contact-form{
-        align-items: center;
         display: flex;
-        flex-direction: column;
-        width: 336px;
-        height: 508px;
-        background: linear-gradient(155deg,#154b9c,#213b7f);
-        color: #fff;
-        align-self: end;
     }
-    .field{
-        width: 250px;
-        height: 60px;
-        margin: 12px;
-        background-color: #fff;
-        color: #000;
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: end;
-        align-items: center;
-    }
-    .field >p {
-        font-size: 0.9rem;
-        font-weight: 600;
-        width: 62px;
-        margin-left: 10px;
-        margin-right: 2px;
-        text-align: end;
-    }
-    .form-title{
-        font-size: 1.5em;
-        width: 250px;
-        height: 60px;
-        position: static;
-        top:-20px;
-    }
-    .form-title > h3{
-        text-align: right;
-    }
-    .contact-form-input{
-        border: none;
-        border-right: 2px solid rgb(045,052,128) ;
-        height: 21px;
-        direction: rtl;
-    }
-    .contact-form-input:focus{
-        outline: none;
-    }
-    .checkbox-container{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: start;
-        margin: 10px;
-        font-weight: 700;
-        font-size: 13px;
-        direction: rtl;
-        gap: 4px;
-    }
-    #contact-form > a{
-        color: #fff;
-        font-size: 12px;
-        margin: 4px;
-    }
-    #contact-form > button{
-        font-size: 2.3em;
-        font-weight: 500;
-        width: 250px;
-        height: 60px;
-        border: 2px solid #00b8d4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;;
-    }
+    
     .explain-section{
         box-shadow: 10px 50px 100px #000;
         display: flex;
@@ -715,6 +774,23 @@ li >p{
     }
     .questions-area{
         width: 49%;
+    }
+    .input-container{
+        flex-direction: row-reverse;
+        max-width: 950px;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .input-container > button,
+    .input-container > .field{
+        width: 25%;
+        margin: 25px 5px;
+    }
+    #footer-contact-form button,
+    .input-container > button{
+        align-self: center;
+        margin: 0 18.5px;
+        margin-top: 0;
     }
 }
 @media screen and (min-width: 1205px){
