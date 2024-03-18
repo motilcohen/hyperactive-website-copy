@@ -406,6 +406,9 @@ li >p{
     background-color: rgb(255, 244, 216);
     padding: 50px 15px 60px 0 ;
 }
+.questions-section-2{
+    background-color: rgb(231,238,241);
+}
 .questions-area > div{
     border-bottom: 0.5px solid #dbdbdb;
     direction: rtl;
@@ -441,6 +444,9 @@ li >p{
 .answer >p {
     margin-top: 0;
     padding: 0 15px 0 15px;
+}
+.answer >a{
+    margin: 0 15px;
 }
 .answer-ol{
     margin: 0 30px;
@@ -699,6 +705,16 @@ li >p{
     }
     .explain-section-content-area > h2{
         margin-top: 40px;
+    }
+    .container-quastion-areas{
+        margin: 0 auto;
+        max-width: 1110px;
+        display: flex;
+        gap: 2%;
+        margin-top: 50px;
+    }
+    .questions-area{
+        width: 49%;
     }
 }
 @media screen and (min-width: 1205px){
