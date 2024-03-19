@@ -639,8 +639,11 @@ li >p{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    display: none;
+
 }
 .modal{
+    position: absolute;
     width: 610px;
     height: 610px;
     border-radius: 305px;
@@ -701,6 +704,12 @@ li >p{
     margin-bottom: 5px;
     height: 50px;
 }
+.top-100vh{
+    top: -100vh
+}
+.move-up{
+    animation: move-up 300ms linear 1;
+}
 @media screen and (min-width: 451px){
     .career-icon{
         height: 64px;
@@ -739,6 +748,10 @@ li >p{
     }
     .arrow-left{
         display: none;
+    }
+    .modal-section{
+        height: 100vh;
+        display: flex;
     }
 }
 @media screen and (min-width: 925px) and (max-width: 1094px) {
@@ -1051,6 +1064,14 @@ li >p{
     100%{
 
         transform: rotateZ(0deg);
+    }
+}
+@keyframes move-up {
+    0%{
+        bottom: 0;
+    }
+    100%{
+        bottom: 100vh;
     }
 }
 .display-none{

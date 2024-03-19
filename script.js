@@ -28,7 +28,10 @@ const globalVariables = {
 }
 function closeModal(){
     globalVariables.modalActive = false;
-    document.getElementById("modal-section").style.display = "none";
+    document.getElementById("modal-section").classList.add("move-up");
+    setTimeout(() => {
+        document.getElementById("modal-section").classList.add("display-none");
+    }, 300);
 }
 function question01(){
     if(!globalVariables.question01clicked){
