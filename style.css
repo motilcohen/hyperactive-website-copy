@@ -37,6 +37,9 @@ header > .header{
     color: #7e685a;
     font-weight: 700;
 }
+.logo-area{
+    text-decoration: none;
+}
 .hamburger > div{
     
     width: 40px;
@@ -589,7 +592,7 @@ li >p{
     text-align: center;
     font-weight: 600px;
 }
-.input-container > .field > p{
+.input-container >.field > p{
     width: 25%;
 }
 .input-container > .field > input{
@@ -630,6 +633,9 @@ li >p{
 .sticky-whatsapp-btn-desktop{
     display: none;
 }
+.sticky-whatsapp-btn-desktop:hover{
+    cursor: pointer;
+}
 .modal-section{
     position: fixed;
     width: 100vw;
@@ -655,6 +661,12 @@ li >p{
     flex-wrap: nowrap;
     align-items: center;
 }
+.modal > form{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 .close-modal-btn{
     margin-top: 20px;
 }
@@ -669,7 +681,7 @@ li >p{
     height: 2px;
     background-color: #000;
 }
-.modal >h2{
+form >h2{
     display: block;
     direction: rtl;
     color: #154b9c;
@@ -679,7 +691,7 @@ li >p{
     font-weight: 800;
     margin: 46px 0 0 0;
 }
-.modal > input{
+form > input{
     color: #040ea3;
     font-weight: 800;
     width: 400px;
@@ -695,7 +707,7 @@ li >p{
     font-size: 13px;
     font-weight: 700;
 }
-.modal >button{
+form >button{
     background: #154b9c;
     width: 210px;
     border: none;

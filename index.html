@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
         <header>
             <div class="header">
                 <div class="hamburger" onclick="hamburgerClick()">
@@ -49,10 +49,10 @@
                     
                     
                 </nav>
-                <div class="logo-area">
+                <a class="logo-area" href="/#body">
                     <img src="	https://hyperactive.co.il/static/media/hyperactive_logo.ca677e3d.png" alt="hyperactive logo">
                     <p>בית הספר להיי-טק הטוב בישראל</p>
-                </div>
+                </a>
                 
             </div>
             <nav id="dropbox-header-nav" class="dropbox-header-nav display-none">
@@ -162,15 +162,15 @@
                 </div>
                 <div class="field">
                     <p>שם מלא</p>
-                    <input class="contact-form-input" type="text" name="name" id="name">
+                    <input class="contact-form-input" type="text" name="name" id="name" required>
                 </div>
                 <div class="field">
                     <p>טלפון</p>
-                    <input class="contact-form-input" type="number" name="phone" id="phone">
+                    <input class="contact-form-input" type="number" name="phone" id="phone" required>
                 </div>
                 <div class="field">
                     <p>אי-מייל</p>
-                    <input class="contact-form-input" type="email" name="email" id="email">
+                    <input class="contact-form-input" type="email" name="email" id="email" required>
                 </div>
                 <div class="checkbox-container">
                     <label>אני מאשר קבלת עדכונים ומבצעים מהייפראקטיב בכפוף לתקנון.</label>
@@ -178,7 +178,7 @@
                 </div>
                 <a href="">מדיניות פרטיות משתמשים</a>
                 <a href="">הצהרת נגישות</a>
-                <button>!דברו איתי</button>
+                <button type="submit">!דברו איתי</button>
             </form>
         </section>
         <section id="why-study-with-us">
@@ -634,17 +634,17 @@
                     <div class="input-container">
                         <div class="field">
                             <p>שם מלא</p>
-                            <input class="contact-form-input" type="text" name="name" id="name">
+                            <input class="contact-form-input" type="text" name="name" id="name" required>
                         </div>
                         <div class="field">
                             <p>טלפון</p>
-                            <input class="contact-form-input" type="number" name="phone" id="phone">
+                            <input class="contact-form-input" type="number" name="phone" id="phone" required>
                         </div>
                         <div class="field">
                             <p>אי-מייל</p>
-                            <input class="contact-form-input" type="email" name="email" id="email">
+                            <input class="contact-form-input" type="email" name="email" id="email" required>
                         </div>
-                        <button>!דברו איתי</button>
+                        <button type="submit">!דברו איתי</button>
                     </div>
                     <div class="checkbox-container">
                         <input type="checkbox" name="agree"  checked>
@@ -672,22 +672,26 @@
             <img src="/images/whatsapp-white-icon.png" alt="">
         </section>
         <section id="modal-section" class="modal-section">
+            
             <div class="modal">
+                <form>
                 <div class="close-modal-btn" onclick="closeModal()">
                     <div></div>
                     <div></div>
                 </div>
                 <h2>מעוניינים לקבל ייעוץ חינם לגבי לימודי הייטק? השאירו פרטים! </h2>
-                <input type="text" placeholder="שם מלא">
-                <input type="number" name="" placeholder="מספר טלפון">
-                <input type="email" name="" placeholder="אי-מייל">
+                <input type="text" placeholder="שם מלא" required>
+                <input type="number" name="" placeholder="מספר טלפון" required>
+                <input type="email" name="" placeholder="אי-מייל" required>
                 <div class="checkbox-container">
                     
                     <label>אני מאשר קבלת עדכונים ומבצעים מהייפראקטיב בכפוף לתקנון.</label>  
                     <input type="checkbox" name="agree"  checked>
                 </div>
-                <button><< דברו איתי</button>
+                <button type="submit"><< דברו איתי</button>
+            </form>
             </div>
+
         </section>
     <script src="script.js"></script>
 </body> 
